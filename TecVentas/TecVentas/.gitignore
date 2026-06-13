@@ -1,0 +1,44 @@
+﻿# Archivos y carpetas de Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.slnx
+*.vsidx
+
+# Archivos de configuración de VS Code
+.vscode/
+
+# Carpetas de compilación
+bin/
+obj/
+Debug/
+Release/
+
+# Archivos de paquetes NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+# Archivos de logs
+*.log
+
+# Archivos de configuración locales
+appsettings.Development.json
+appsettings.Local.json
+
+# Archivos de cache y temporales
+*.tmp
+*.temp
+*.bak
+*.swp
+
+# Archivos de IIS Express
+applicationhost.config
+
+# Archivos de Rider/Resharper
+.idea/
+*.DotSettings.user
+

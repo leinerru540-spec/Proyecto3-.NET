@@ -1,0 +1,100 @@
+@TecVentas_HostAddress = http://localhost:5020
+
+### Obtener pronóstico del tiempo (ejemplo base)
+GET {{TecVentas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+### ============================
+### CLIENTES
+### ============================
+
+### Crear Cliente
+POST {{TecVentas_HostAddress}}/api/clientes
+Content-Type: application/json
+
+{
+  "nombre": "Neymar jr",
+  "correo": "ney@.com",
+  "telefono": "9876-5643"
+}
+
+### Listar Clientes
+GET {{TecVentas_HostAddress}}/api/clientes
+Accept: application/json
+
+### Actualizar Cliente
+PUT {{TecVentas_HostAddress}}/api/clientes/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "Leiner Actualizado",
+  "correo": "leiner.new@example.com",
+  "telefono": "9999-9999"
+}
+
+### Eliminar Cliente
+DELETE {{TecVentas_HostAddress}}/api/clientes/3
+
+### ============================
+### PRODUCTOS
+### ============================
+
+### Crear Producto
+POST {{TecVentas_HostAddress}}/api/productos
+Content-Type: application/json
+
+{
+  "nombre": "Laptop ACER Ryzen 4",
+  "precio": 376000
+}
+
+### Listar Productos
+GET {{TecVentas_HostAddress}}/api/productos
+Accept: application/json
+
+### Actualizar Producto
+PUT {{TecVentas_HostAddress}}/api/productos/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "nombre": "Laptop Acer Aspire 3 - Nueva",
+  "precio": 340000
+}
+
+### Eliminar Producto
+DELETE {{TecVentas_HostAddress}}/api/productos/3
+
+### ============================
+### VENTAS
+### ============================
+
+### Crear Venta
+POST {{TecVentas_HostAddress}}/api/ventas
+Content-Type: application/json
+
+{
+  "clienteId": 2,
+  "productoId": 2,
+  "cantidad": 3
+}
+
+
+### Listar Ventas
+GET {{TecVentas_HostAddress}}/api/ventas
+Accept: application/json
+
+### Actualizar Venta
+PUT {{TecVentas_HostAddress}}/api/ventas/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "clienteId": 1,
+  "productoId": 1,
+  "cantidad": 3
+}
+
+### Eliminar Venta
+DELETE {{TecVentas_HostAddress}}/api/ventas/2
