@@ -2,7 +2,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using TecVentas.Data;
-using TecVentas.Services; 
+using TecVentas.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,8 +17,6 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("PermitirCliente", policy =>
@@ -29,8 +27,6 @@ builder.Services.AddCors(options =>
             .AllowAnyMethod();
     });
 });
-
-
 
 builder.Services.AddAuthentication("Bearer")
 .AddJwtBearer("Bearer", options =>
@@ -54,12 +50,16 @@ builder.Services.AddAuthentication("Bearer")
 
 builder.Services.AddAuthorization();
 
-
-
 builder.Services.AddScoped<TokenService>();
 
-
 var app = builder.Build();
+
+
+
+
+await DbInitializer.InicializarAsync(app.Services);
+
+
 
 if (app.Environment.IsDevelopment())
 {

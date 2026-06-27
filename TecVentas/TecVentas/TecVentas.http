@@ -1,46 +1,60 @@
 @TecVentas_HostAddress = http://localhost:5020
 
-### Obtener pronóstico del tiempo (ejemplo base)
-GET {{TecVentas_HostAddress}}/weatherforecast/
-Accept: application/json
 
 ### ============================
-### CLIENTES
-### ============================
 
-### Crear Cliente
-POST {{TecVentas_HostAddress}}/api/clientes
+POST {{TecVentas_HostAddress}}/api/auth/login
 Content-Type: application/json
 
 {
-  "nombre": "Neymar jr",
-  "correo": "ney@.com",
-  "telefono": "9876-5643"
+  "username": "neymar",
+  "password": "1234"
 }
 
-### Listar Clientes
-GET {{TecVentas_HostAddress}}/api/clientes
+### Token de prueba 
+@TecVentas_AdminToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc4MjU5NzY0NywiaXNzIjoiTWlBUEkiLCJhdWQiOiJNaUFQSVVzdWFyaW9zIn0.GctrI_2ukZf8n-y2j8C8sbXMyBaaYzSIIyT3v0AF4f8
+
+### Crear Usuario
+POST {{TecVentas_HostAddress}}/api/auth/users
+Content-Type: application/json
+Authorization: Bearer {{TecVentas_AdminToken}}
+
+{
+  "nombre": "Neymar Jr",
+  "username": "neymar",
+  "password": "1234",
+  "correo": "ney@com.com",
+  "telefono": "8888-8888",
+  "role": "User"
+}
+
+### Listar Usuarios
+GET {{TecVentas_HostAddress}}/api/auth/users
+Authorization: Bearer {{TecVentas_AdminToken}}
 Accept: application/json
 
-### Actualizar Cliente
-PUT {{TecVentas_HostAddress}}/api/clientes/1
+### Actualizar Usuario
+PUT {{TecVentas_HostAddress}}/api/auth/users/1
 Content-Type: application/json
+Authorization: Bearer {{TecVentas_AdminToken}}
 
 {
   "id": 1,
-  "nombre": "Leiner Actualizado",
-  "correo": "leiner.new@example.com",
-  "telefono": "9999-9999"
+  "nombre": "Usuario Actualizado",
+  "username": "user1",
+  "password": "1234",
+  "correo": "user@new.com",
+  "telefono": "9999-9999",
+  "role": "User"
 }
 
-### Eliminar Cliente
-DELETE {{TecVentas_HostAddress}}/api/clientes/3
+### Eliminar Usuario
+DELETE {{TecVentas_HostAddress}}/api/auth/users/3
+Authorization: Bearer {{TecVentas_AdminToken}}
 
-### ============================
-### PRODUCTOS
-### ============================
 
-### Crear Producto
+
+### crear Producto
 POST {{TecVentas_HostAddress}}/api/productos
 Content-Type: application/json
 
@@ -48,8 +62,7 @@ Content-Type: application/json
   "nombre": "Laptop ACER Ryzen 4",
   "precio": 376000
 }
-
-### Listar Productos
+###   Listar Productos
 GET {{TecVentas_HostAddress}}/api/productos
 Accept: application/json
 
@@ -66,20 +79,19 @@ Content-Type: application/json
 ### Eliminar Producto
 DELETE {{TecVentas_HostAddress}}/api/productos/3
 
-### ============================
+
 ### VENTAS
-### ============================
+
 
 ### Crear Venta
 POST {{TecVentas_HostAddress}}/api/ventas
 Content-Type: application/json
 
 {
-  "clienteId": 2,
-  "productoId": 2,
+  "userId": 3,
+  "productoId": 1,
   "cantidad": 3
 }
-
 
 ### Listar Ventas
 GET {{TecVentas_HostAddress}}/api/ventas
@@ -91,20 +103,10 @@ Content-Type: application/json
 
 {
   "id": 1,
-  "clienteId": 1,
+  "userId": 1,
   "productoId": 1,
   "cantidad": 3
 }
 
 ### Eliminar Venta
 DELETE {{TecVentas_HostAddress}}/api/ventas/2
-
-### Login
-
-POST {{TecVentas_HostAddress}}/api/auth/login
-Content-Type: application/json
-
-{
-  "username": "admin",
-  "password": "1234"
-}

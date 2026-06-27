@@ -21,7 +21,7 @@ namespace TecVentas.Controllers
         public async Task<ActionResult<IEnumerable<Venta>>> GetVentas()
         {
             return await _context.Ventas
-                .Include(v => v.Cliente)
+                .Include(v => v.User)
                 .Include(v => v.Producto)
                 .ToListAsync();
         }
@@ -31,27 +31,33 @@ namespace TecVentas.Controllers
         public async Task<ActionResult<Venta>> GetVenta(int id)
         {
             var venta = await _context.Ventas
-                .Include(v => v.Cliente)
+                .Include(v => v.User)
                 .Include(v => v.Producto)
                 .FirstOrDefaultAsync(v => v.Id == id);
 
-            if (venta == null) return NotFound();
+            if (venta == null)
+                return NotFound();
+
             return venta;
         }
+
+        // POST: api/Ventas
         [HttpPost]
         public async Task<ActionResult<Venta>> PostVenta([FromBody] Venta venta)
         {
-            var cliente = await _context.Clientes.FindAsync(venta.ClienteId);
-            if (cliente == null) return BadRequest("Cliente no encontrado");
+            var user = await _context.Users.FindAsync(venta.UserId);
+            if (user == null)
+                return BadRequest("Usuario no encontrado");
 
             var producto = await _context.Productos.FindAsync(venta.ProductoId);
-            if (producto == null) return BadRequest("Producto no encontrado");
+            if (producto == null)
+                return BadRequest("Producto no encontrado");
 
             venta.Total = producto.Precio * venta.Cantidad;
             venta.Fecha = DateTime.Now;
 
-            // Evitar que el binder exija objetos completos
-            venta.Cliente = null;
+            // Evitar que el binder espere los objetos completos
+            venta.User = null;
             venta.Producto = null;
 
             _context.Ventas.Add(venta);
@@ -60,22 +66,25 @@ namespace TecVentas.Controllers
             return CreatedAtAction(nameof(GetVenta), new { id = venta.Id }, venta);
         }
 
-
-
-
         // PUT: api/Ventas/5
         [HttpPut("{id}")]
         public async Task<IActionResult> PutVenta(int id, Venta venta)
         {
-            if (id != venta.Id) return BadRequest();
+            if (id != venta.Id)
+                return BadRequest();
 
-            // Validar producto para recalcular total
+            var user = await _context.Users.FindAsync(venta.UserId);
+            if (user == null)
+                return BadRequest("Usuario no encontrado");
+
             var producto = await _context.Productos.FindAsync(venta.ProductoId);
-            if (producto == null) return BadRequest("Producto no encontrado");
+            if (producto == null)
+                return BadRequest("Producto no encontrado");
 
             venta.Total = producto.Precio * venta.Cantidad;
 
             _context.Entry(venta).State = EntityState.Modified;
+
             await _context.SaveChangesAsync();
 
             return NoContent();
@@ -86,13 +95,14 @@ namespace TecVentas.Controllers
         public async Task<IActionResult> DeleteVenta(int id)
         {
             var venta = await _context.Ventas.FindAsync(id);
-            if (venta == null) return NotFound();
+
+            if (venta == null)
+                return NotFound();
 
             _context.Ventas.Remove(venta);
             await _context.SaveChangesAsync();
+
             return NoContent();
         }
     }
 }
-
-

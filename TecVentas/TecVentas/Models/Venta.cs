@@ -1,20 +1,21 @@
 ﻿using TecVentas.Models;
 
-public class Venta
+namespace TecVentas.Models
 {
-    public int Id { get; set; }
+    public class Venta
+    {
+        public int Id { get; set; }
 
-    public int ClienteId { get; set; }
-    public Cliente? Cliente { get; set; }   // ← opcional
+        public int UserId { get; set; }
+        public User? User { get; set; }
 
-    public int ProductoId { get; set; }
-    public Producto? Producto { get; set; } // ← opcional
+        public int ProductoId { get; set; }
+        public Producto? Producto { get; set; }
 
-    public DateTime Fecha { get; set; }
-    public int Cantidad { get; set; }
-    public decimal Total { get; set; }
+        public DateTime Fecha { get; set; }
+
+        public int Cantidad { get; set; }
+
+        public decimal Total { get; set; }
+    }
 }
-
-
-
-
