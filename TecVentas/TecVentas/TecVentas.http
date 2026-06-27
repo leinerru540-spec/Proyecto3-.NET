@@ -98,3 +98,13 @@ Content-Type: application/json
 
 ### Eliminar Venta
 DELETE {{TecVentas_HostAddress}}/api/ventas/2
+
+### Login
+
+POST {{TecVentas_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "username": "admin",
+  "password": "1234"
+}
