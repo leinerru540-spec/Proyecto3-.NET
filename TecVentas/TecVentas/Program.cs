@@ -17,6 +17,10 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+//Paypal
+builder.Services.AddHttpClient<PayPalService>();
+builder.Services.AddScoped<PayPalService>();
+
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("PermitirCliente", policy =>

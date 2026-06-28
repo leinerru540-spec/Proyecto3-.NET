@@ -1,7 +1,7 @@
 @TecVentas_HostAddress = http://localhost:5020
 
 
-### ============================
+###  Login
 
 POST {{TecVentas_HostAddress}}/api/auth/login
 Content-Type: application/json
@@ -110,3 +110,8 @@ Content-Type: application/json
 
 ### Eliminar Venta
 DELETE {{TecVentas_HostAddress}}/api/ventas/2
+
+
+### Crear orden PayPal
+POST {{TecVentas_HostAddress}}/api/paypal/create-order?amount=10
+Accept: application/json
