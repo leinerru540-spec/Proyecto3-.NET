@@ -115,3 +115,56 @@ DELETE {{TecVentas_HostAddress}}/api/ventas/2
 ### Crear orden PayPal
 POST {{TecVentas_HostAddress}}/api/paypal/create-order?amount=10
 Accept: application/json
+
+
+
+
+### Pagos
+
+### Obtener todos los pagos
+GET {{TecVentas_HostAddress}}/api/Pagos
+Accept: application/json
+
+###
+
+### Crear un nuevo pago
+POST {{TecVentas_HostAddress}}/api/Pagos
+Content-Type: application/json
+
+{
+  "ventaId": 1,
+  "clienteId": 1,
+  "monto": 1500.50,
+  "metodoPago": "Tarjeta",
+  "fechaHora": "2026-06-29T14:30:00",
+  "estado": "Completado",
+  "codigoAutorizacion": "ABC123XYZ"
+}
+
+###
+
+### Obtener un pago por ID
+GET {{TecVentas_HostAddress}}/api/Pagos/1
+Accept: application/json
+
+###
+
+### Actualizar un pago existente
+PUT {{TecVentas_HostAddress}}/api/Pagos/1
+Content-Type: application/json
+
+{
+  "pagoId": 1,
+  "ventaId": 1,
+  "clienteId": 1,
+  "monto": 2000.00,
+  "metodoPago": "PayPal",
+  "fechaHora": "2026-06-29T15:00:00",
+  "estado": "Pendiente",
+  "codigoAutorizacion": "XYZ789"
+}
+
+###
+
+### Eliminar un pago
+DELETE {{TecVentas_HostAddress}}/api/Pagos/1

@@ -12,11 +12,17 @@ namespace TecVentas.Data
 
             var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
 
-            
             await context.Database.MigrateAsync();
 
             var hasher = new PasswordHasher<User>();
 
+            // ⚠️ Comentado: Bloque de creación de usuarios Admin/User
+            // Motivo: La tabla 'Users' aún no existe en la base de datos,
+            // esto provocaba la excepción "Invalid object name 'Users'".
+            // Se deja comentado temporalmente para que el proyecto pueda arrancar
+            // y podamos probar el CRUD de Pagos sin errores.
+
+            /*
             // Admin
             if (!await context.Users.AnyAsync(u => u.Username == "admin"))
             {
@@ -52,6 +58,7 @@ namespace TecVentas.Data
             }
 
             await context.SaveChangesAsync();
+            */
         }
     }
 }
