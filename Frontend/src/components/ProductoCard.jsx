@@ -72,7 +72,7 @@ function ProductoCard({ producto }) {
                     Stock: <span className="font-bold">{producto.stock}</span>
                 </p>
 
-                {/* CANTIDAD */}
+                
                 <div className="flex items-center justify-between mb-6">
                     <p className="font-semibold">Cantidad</p>
 
@@ -97,7 +97,7 @@ function ProductoCard({ producto }) {
                     </div>
                 </div>
 
-                {/* BOTÓN PAYPAL */}
+                
                 <button
                     onClick={manejarCompra}
                     disabled={loading}

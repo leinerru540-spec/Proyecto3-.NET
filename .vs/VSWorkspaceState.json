@@ -3,14 +3,15 @@
     "",
     "\\Frontend",
     "\\Frontend\\src",
-    "\\Frontend\\src\\components",
     "\\Frontend\\src\\pages",
+    "\\Frontend\\src\\pages\\admin",
+    "\\Frontend\\src\\services",
     "\\TecVentas",
     "\\TecVentas\\TecVentas",
     "\\TecVentas\\TecVentas\\Controllers",
     "\\TecVentas\\TecVentas\\Data",
-    "\\TecVentas\\TecVentas\\Models"
+    "\\TecVentas\\TecVentas\\DTOs"
   ],
-  "SelectedNode": "\\Frontend\\src\\pages",
+  "SelectedNode": "\\TecVentas\\TecVentas\\Controllers\\HistorialComprasController.cs",
   "PreviewInSolutionExplorer": false
 }

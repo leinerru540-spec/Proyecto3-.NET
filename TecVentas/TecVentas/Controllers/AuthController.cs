@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using TecVentas.Data;
 using TecVentas.Models;
 using TecVentas.Services;
@@ -64,7 +65,7 @@ namespace TecVentas.Controllers
             });
         }
 
-        
+
         [AllowAnonymous]
         [HttpGet("publico")]
         public IActionResult GetPublico()
@@ -72,7 +73,7 @@ namespace TecVentas.Controllers
             return Ok("Este endpoint es público y no requiere token.");
         }
 
-        
+
         [Authorize]
         [HttpGet("datos-seguros")]
         public IActionResult GetDatos()
@@ -80,7 +81,7 @@ namespace TecVentas.Controllers
             return Ok("Este endpoint está protegido con JWT.");
         }
 
-       
+
         [Authorize(Roles = "Admin")]
         [HttpGet("users")]
         public async Task<ActionResult<IEnumerable<User>>> GetUsers()
@@ -135,7 +136,7 @@ namespace TecVentas.Controllers
             usuarioExistente.Telefono = user.Telefono;
             usuarioExistente.Role = user.Role;
 
-            
+
             if (!string.IsNullOrWhiteSpace(user.Password))
             {
                 var hasher = new PasswordHasher<User>();
@@ -148,6 +149,33 @@ namespace TecVentas.Controllers
             await _context.SaveChangesAsync();
 
             return NoContent();
+        }
+
+        // Mi perfil
+
+        [Authorize]
+        [HttpGet("me")]
+        public async Task<IActionResult> GetMe()
+        {
+            var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
+
+            if (userIdClaim == null || !int.TryParse(userIdClaim, out int userId))
+                return Unauthorized();
+
+            var user = await _context.Users.FindAsync(userId);
+
+            if (user == null)
+                return NotFound();
+
+            return Ok(new
+            {
+                user.Id,
+                user.Nombre,
+                user.Username,
+                user.Correo,
+                user.Telefono,
+                user.Role
+            });
         }
 
         // Eliminar usuario

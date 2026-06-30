@@ -20,7 +20,6 @@ function Navbar() {
     return (
         <nav className="bg-black h-20 px-10 flex items-center justify-between shadow-lg relative z-50">
 
-            {/* LOGO */}
             <div className="flex items-center gap-4">
                 <Link to="/">
                     <img src={logo} alt="Tec no Jutso" className="w-40 h-40 object-contain" />
@@ -31,8 +30,7 @@ function Navbar() {
                 </h1>
             </div>
 
-            {/* LINKS */}
-            <div className="flex items-center gap-10 font-semibold text-xl">
+            <div className="flex items-center gap-7 font-semibold text-lg">
 
                 <Link to="/" className="text-white hover:text-[#A855F7]">
                     Inicio
@@ -46,32 +44,50 @@ function Navbar() {
                     Productos
                 </Link>
 
-                {/* 🔥 SOLO ADMIN */}
-                {isAdmin && (
+                
+                {isLoggedIn && (
                     <div className="relative group py-6">
-                        <button className="text-white hover:text-[#A855F7]">
-                            Acciones ▼
+                        <button className="text-white hover:text-[#A855F7] flex items-center gap-1">
+                            <User size={16} />
+                            {isAdmin ? "Administración ▼" : "Mi Perfil ▼"}
                         </button>
 
-                        <div className="absolute left-0 top-full hidden group-hover:flex flex-col bg-black border border-[#A855F7] rounded-xl w-48 shadow-lg z-50 overflow-hidden">
+                        <div className="absolute right-0 top-full hidden group-hover:flex flex-col bg-black border border-[#A855F7] rounded-xl w-56 shadow-lg z-50 overflow-hidden">
 
-                            <Link to="/admin/productos" className="px-5 py-3 text-white hover:bg-[#A855F7]">
-                                Productos
+                            <Link to="/perfil" className="px-5 py-3 text-white hover:bg-[#A855F7]">
+                                Mi cuenta
                             </Link>
 
-                            <Link to="/admin/usuarios" className="px-5 py-3 text-white hover:bg-[#A855F7]">
-                                Usuarios
+                            <Link to="/perfil/compras" className="px-5 py-3 text-white hover:bg-[#A855F7]">
+                                Historial de compras
                             </Link>
 
-                            <Link to="/admin/ventas" className="px-5 py-3 text-white hover:bg-[#A855F7]">
-                                Ventas
-                            </Link>
+                            {isAdmin && (
+                                <>
+                                    <div className="border-t border-[#A855F7]/40 my-1" />
+
+                                    <span className="px-5 pt-2 pb-1 text-xs uppercase tracking-wide text-[#A855F7]">
+                                        Administración
+                                    </span>
+
+                                    <Link to="/admin/productos" className="px-5 py-3 text-white hover:bg-[#A855F7]">
+                                        Productos
+                                    </Link>
+
+                                    <Link to="/admin/usuarios" className="px-5 py-3 text-white hover:bg-[#A855F7]">
+                                        Usuarios
+                                    </Link>
+
+                                    <Link to="/admin/ventas" className="px-5 py-3 text-white hover:bg-[#A855F7]">
+                                        Ventas
+                                    </Link>
+                                </>
+                            )}
 
                         </div>
                     </div>
                 )}
 
-                {/* LOGIN / LOGOUT */}
                 {!isLoggedIn ? (
                     <Link
                         to="/login"
