@@ -53,10 +53,16 @@ namespace TecVentas.Controllers
             if (producto == null)
                 return BadRequest("Producto no encontrado");
 
+            // Verificar stock suficiente
+            if (producto.Stock < venta.Cantidad)
+                return BadRequest("Stock insuficiente");
+
+            // Bajar stock
+            producto.Stock -= venta.Cantidad;
+            _context.Productos.Update(producto);
+
             venta.Total = producto.Precio * venta.Cantidad;
             venta.Fecha = DateTime.Now;
-
-            // Evitar que el binder espere los objetos completos
             venta.User = null;
             venta.Producto = null;
 

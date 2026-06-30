@@ -23,12 +23,13 @@ function ProductoCard({ producto }) {
 
             const amount = producto.precio * cantidad;
 
-            const res = await crearOrdenPayPal(amount);
-
             
+            localStorage.setItem("productoId", producto.id);
+            localStorage.setItem("cantidad", cantidad);
+
+            const res = await crearOrdenPayPal(amount);
             const data = res.data;
 
-           
             const approveUrl = data.links.find(
                 (l) => l.rel === "approve"
             )?.href;
@@ -46,7 +47,6 @@ function ProductoCard({ producto }) {
             setLoading(false);
         }
     }
-
     return (
         <div className="bg-white rounded-3xl shadow-lg border border-gray-200 overflow-hidden hover:-translate-y-2 hover:shadow-[0_0_30px_#A855F7]/40 transition-all duration-300">
 

@@ -23,9 +23,9 @@ function PagoExitoso() {
         async function capturarYGuardar() {
             try {
                 await api.post(`/PayPal/capture-order?token=${token}`);
-                console.log("✅ Capture OK");
+                console.log("Capture OK");
             } catch (err) {
-                console.error("❌ capture-order:", err.response?.data);
+                console.error("capture-order:", err.response?.data);
                 setEstado("Error al capturar pago");
                 return;
             }
@@ -36,13 +36,26 @@ function PagoExitoso() {
                     productoId: Number(localStorage.getItem("productoId")),
                     cantidad: Number(localStorage.getItem("cantidad"))
                 };
-                console.log("📦 Venta:", venta);
+                console.log("Venta:", venta);
 
-                await api.post("/Ventas", venta);
+                const ventaRes = await api.post("/Ventas", venta);
+                console.log("Venta OK");
+
+                
+                await api.post("/Pagos", {
+                    ventaId: ventaRes.data.id,
+                    clienteId: Number(localStorage.getItem("userId")),
+                    monto: ventaRes.data.total,
+                    metodoPago: "PayPal",
+                    codigoAutorizacion: token,
+                    estado: "Completado"  
+                });
+                console.log(" Pago registrado");
+
                 setEstado("¡Pago exitoso y venta guardada! 🎉");
 
             } catch (err) {
-                console.error("❌ /Ventas:", err.response?.data);
+                console.error(" Error:", err.response?.data);
                 setEstado("Pago OK pero error al guardar venta");
             }
         }

@@ -8,9 +8,9 @@
     "\\TecVentas",
     "\\TecVentas\\TecVentas",
     "\\TecVentas\\TecVentas\\Controllers",
-    "\\TecVentas\\TecVentas\\Models",
-    "\\TecVentas\\TecVentas\\services"
+    "\\TecVentas\\TecVentas\\Data",
+    "\\TecVentas\\TecVentas\\Models"
   ],
-  "SelectedNode": "\\Frontend\\src\\App.jsx",
+  "SelectedNode": "\\Frontend\\src\\pages",
   "PreviewInSolutionExplorer": false
 }
