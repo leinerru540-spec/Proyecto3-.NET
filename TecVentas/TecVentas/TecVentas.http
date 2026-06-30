@@ -7,12 +7,12 @@ POST {{TecVentas_HostAddress}}/api/auth/login
 Content-Type: application/json
 
 {
-  "username": "neymar",
+  "username": "admin",
   "password": "1234"
 }
 
 ### Token de prueba 
-@TecVentas_AdminToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc4MjU5NzY0NywiaXNzIjoiTWlBUEkiLCJhdWQiOiJNaUFQSVVzdWFyaW9zIn0.GctrI_2ukZf8n-y2j8C8sbXMyBaaYzSIIyT3v0AF4f8
+@TecVentas_AdminToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiYWRtaW4iLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc4Mjc5ODQ4NiwiaXNzIjoiTWlBUEkiLCJhdWQiOiJNaUFQSVVzdWFyaW9zIn0.urP_Zz43BVzJDFS7-8nFN2RO3lbADswANe1TvcZQM0I
 
 ### Crear Usuario
 POST {{TecVentas_HostAddress}}/api/auth/users
@@ -20,12 +20,12 @@ Content-Type: application/json
 Authorization: Bearer {{TecVentas_AdminToken}}
 
 {
-  "nombre": "Neymar Jr",
-  "username": "neymar",
+  "nombre": "Luis",
+  "username": "hawk",
   "password": "1234",
-  "correo": "ney@com.com",
-  "telefono": "8888-8888",
-  "role": "User"
+  "correo": "hawk@com.com",
+  "telefono": "7777-8888",
+  "role": "admin"
 }
 
 ### Listar Usuarios
@@ -59,8 +59,8 @@ POST {{TecVentas_HostAddress}}/api/productos
 Content-Type: application/json
 
 {
-  "nombre": "Laptop ACER Ryzen 4",
-  "precio": 376000
+  "nombre": "Xbox one S",
+  "precio": 400000
 }
 ###   Listar Productos
 GET {{TecVentas_HostAddress}}/api/productos

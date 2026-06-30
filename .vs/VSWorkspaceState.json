@@ -1,10 +1,16 @@
 {
   "ExpandedNodes": [
     "",
+    "\\Frontend",
+    "\\Frontend\\src",
+    "\\Frontend\\src\\components",
+    "\\Frontend\\src\\services",
     "\\TecVentas",
     "\\TecVentas\\TecVentas",
-    "\\TecVentas\\TecVentas\\Data"
+    "\\TecVentas\\TecVentas\\Controllers",
+    "\\TecVentas\\TecVentas\\Models",
+    "\\TecVentas\\TecVentas\\services"
   ],
-  "SelectedNode": "\\TecVentas\\TecVentas\\appsettings.json",
+  "SelectedNode": "\\TecVentas\\TecVentas\\services",
   "PreviewInSolutionExplorer": false
 }
