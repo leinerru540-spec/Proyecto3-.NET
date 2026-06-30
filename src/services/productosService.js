@@ -1,21 +1,11 @@
 import api from "../api/api";
 
-export const obtenerProductos = () => {
-    return api.get("/Productos");
-};
+export const obtenerProductos = () => api.get("/Productos");
 
-export const obtenerProducto = (id) => {
-    return api.get(`/Productos/${id}`);
-};
+export const crearProducto = (producto) => api.post("/Productos", producto);
 
-export const crearProducto = (producto) => {
-    return api.post("/Productos", producto);
-};
+export const editarProducto = (id, producto) =>
+  api.put(`/Productos/${id}`, producto);
 
-export const editarProducto = (id, producto) => {
-    return api.put(`/Productos/${id}`, producto);
-};
-
-export const eliminarProducto = (id) => {
-    return api.delete(`/Productos/${id}`);
-};
+export const eliminarProducto = (id) =>
+  api.delete(`/Productos/${id}`);

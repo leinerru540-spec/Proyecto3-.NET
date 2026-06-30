@@ -2,7 +2,7 @@ import logo from "../assets/LogoTecNoJutso.png";
 
 function Footer() {
   return (
-    <footer className="bg-black text-white mt-16 px-10 py-10">
+    <footer className="bg-black text-white px-10 py-10">
       <div className="grid md:grid-cols-3 gap-10 items-center">
         
         <div>
