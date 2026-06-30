@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { CarritoProvider } from "./context/CarritoContext";
 import Inicio from "./pages/Inicio";
 import Nosotros from "./pages/Nosotros";
 import Productos from "./pages/Productos";
+import Carrito from "./pages/Carrito";
 import AdminProductos from "./pages/admin/AdminProductos";
 import AdminUsuarios from "./pages/admin/AdminUsuarios";
 import AdminVentas from "./pages/admin/AdminVentas";
@@ -18,37 +20,40 @@ function RutaPrivada({ children }) {
 
 function App() {
     return (
-        <BrowserRouter>
-            <Routes>
-                <Route path="/" element={<Inicio />} />
-                <Route path="/nosotros" element={<Nosotros />} />
-                <Route path="/productos" element={<Productos />} />
-                <Route path="/admin/productos" element={<AdminProductos />} />
-                <Route path="/admin/usuarios" element={<AdminUsuarios />} />
-                <Route path="/admin/ventas" element={<AdminVentas />} />
-                <Route path="/login" element={<Login />} />
-                <Route path="/pago-exitoso" element={<PagoExitoso />} />
-                <Route path="/pago-cancelado" element={<PagoCancelado />} />
+        <CarritoProvider>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/" element={<Inicio />} />
+                    <Route path="/nosotros" element={<Nosotros />} />
+                    <Route path="/productos" element={<Productos />} />
+                    <Route path="/carrito" element={<Carrito />} />
+                    <Route path="/admin/productos" element={<AdminProductos />} />
+                    <Route path="/admin/usuarios" element={<AdminUsuarios />} />
+                    <Route path="/admin/ventas" element={<AdminVentas />} />
+                    <Route path="/login" element={<Login />} />
+                    <Route path="/pago-exitoso" element={<PagoExitoso />} />
+                    <Route path="/pago-cancelado" element={<PagoCancelado />} />
 
-                <Route
-                    path="/perfil/compras"
-                    element={
-                        <RutaPrivada>
-                            <HistorialCompras />
-                        </RutaPrivada>
-                    }
-                />
+                    <Route
+                        path="/perfil/compras"
+                        element={
+                            <RutaPrivada>
+                                <HistorialCompras />
+                            </RutaPrivada>
+                        }
+                    />
 
-                <Route
-                    path="/perfil"
-                    element={
-                        <RutaPrivada>
-                            <MiCuenta />
-                        </RutaPrivada>
-                    }
-                />
-            </Routes>
-        </BrowserRouter>
+                    <Route
+                        path="/perfil"
+                        element={
+                            <RutaPrivada>
+                                <MiCuenta />
+                            </RutaPrivada>
+                        }
+                    />
+                </Routes>
+            </BrowserRouter>
+        </CarritoProvider>
     );
 }
 

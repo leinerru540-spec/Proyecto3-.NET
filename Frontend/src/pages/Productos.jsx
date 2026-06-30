@@ -42,21 +42,21 @@ function Productos() {
                     </p>
                 </div>
 
-                {/* LOADING */}
+               
                 {loading && (
                     <p className="text-center text-gray-500">
                         Cargando productos...
                     </p>
                 )}
 
-                {/* ERROR */}
+                
                 {error && (
                     <p className="text-center text-red-500 font-bold">
                         {error}
                     </p>
                 )}
 
-                {/* GRID */}
+                
                 {!loading && !error && (
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
                         {productos.length > 0 ? (

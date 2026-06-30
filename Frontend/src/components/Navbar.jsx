@@ -1,9 +1,11 @@
 import { Link, useNavigate } from "react-router-dom";
-import { User } from "lucide-react";
+import { User, ShoppingCart } from "lucide-react";
 import logo from "../assets/LogoTecNoJutso.png";
+import { useCarrito } from "../context/CarritoContext";
 
 function Navbar() {
     const navigate = useNavigate();
+    const { carrito, recargarCarrito } = useCarrito();
 
     const token = localStorage.getItem("token");
     const role = localStorage.getItem("role");
@@ -11,9 +13,14 @@ function Navbar() {
     const isLoggedIn = !!token;
     const isAdmin = role === "admin";
 
+    const totalItems = carrito.reduce((acc, item) => acc + item.cantidad, 0);
+
     const handleLogout = () => {
         localStorage.removeItem("token");
         localStorage.removeItem("role");
+        localStorage.removeItem("userId");
+        localStorage.removeItem("user");
+        recargarCarrito();
         navigate("/login");
     };
 
@@ -44,7 +51,16 @@ function Navbar() {
                     Productos
                 </Link>
 
-                
+                <Link to="/carrito" className="relative text-white hover:text-[#A855F7]">
+                    <ShoppingCart size={24} />
+                    {totalItems > 0 && (
+                        <span className="absolute -top-2 -right-2 bg-[#A855F7] text-white text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+                            {totalItems}
+                        </span>
+                    )}
+                </Link>
+
+
                 {isLoggedIn && (
                     <div className="relative group py-6">
                         <button className="text-white hover:text-[#A855F7] flex items-center gap-1">

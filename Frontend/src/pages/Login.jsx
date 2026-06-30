@@ -4,9 +4,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import loginFondo from "../assets/LoginFondo.png";
 import { loginUsuario } from "../services/authService";
+import { useCarrito } from "../context/CarritoContext";
 
 function Login() {
     const navigate = useNavigate();
+    const { recargarCarrito } = useCarrito();
 
     const [datos, setDatos] = useState({
         username: "",
@@ -26,20 +28,22 @@ function Login() {
         try {
             const respuesta = await loginUsuario(datos);
 
-            
+
             localStorage.setItem("token", respuesta.data.token);
 
-            
+
             localStorage.setItem("user", JSON.stringify(respuesta.data.user));
 
-            
+
             localStorage.setItem(
                 "role",
                 (respuesta.data.user.role || "").toLowerCase()
             );
 
-           
+
             localStorage.setItem("userId", respuesta.data.user.id);
+
+            recargarCarrito();
 
             navigate("/");
         } catch (error) {

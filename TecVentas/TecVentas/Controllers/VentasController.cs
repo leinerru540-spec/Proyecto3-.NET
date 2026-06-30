@@ -5,6 +5,12 @@ using TecVentas.Models;
 
 namespace TecVentas.Controllers
 {
+    public class ItemValidacion
+    {
+        public int ProductoId { get; set; }
+        public int Cantidad { get; set; }
+    }
+
     [Route("api/[controller]")]
     [ApiController]
     public class VentasController : ControllerBase
@@ -41,6 +47,37 @@ namespace TecVentas.Controllers
             return venta;
         }
 
+        // POST: api/Ventas/validar-stock
+        [HttpPost("validar-stock")]
+        public async Task<IActionResult> ValidarStock([FromBody] List<ItemValidacion> items)
+        {
+            if (items == null || items.Count == 0)
+                return BadRequest(new { mensaje = "No se enviaron productos para validar" });
+
+            var errores = new List<string>();
+
+            foreach (var item in items)
+            {
+                var producto = await _context.Productos.FindAsync(item.ProductoId);
+
+                if (producto == null)
+                {
+                    errores.Add($"Producto {item.ProductoId} no encontrado");
+                    continue;
+                }
+
+                if (producto.Stock < item.Cantidad)
+                {
+                    errores.Add($"{producto.Nombre}: solo quedan {producto.Stock} unidades disponibles");
+                }
+            }
+
+            if (errores.Count > 0)
+                return BadRequest(new { mensaje = "Stock insuficiente", errores });
+
+            return Ok(new { mensaje = "Stock disponible" });
+        }
+
         // POST: api/Ventas
         [HttpPost]
         public async Task<ActionResult<Venta>> PostVenta([FromBody] Venta venta)
@@ -53,11 +90,11 @@ namespace TecVentas.Controllers
             if (producto == null)
                 return BadRequest("Producto no encontrado");
 
-            // Verificar stock suficiente
+            
             if (producto.Stock < venta.Cantidad)
                 return BadRequest("Stock insuficiente");
 
-            // Bajar stock
+            
             producto.Stock -= venta.Cantidad;
             _context.Productos.Update(producto);
 

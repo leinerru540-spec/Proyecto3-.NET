@@ -1,17 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Frontend",
-    "\\Frontend\\src",
-    "\\Frontend\\src\\pages",
-    "\\Frontend\\src\\pages\\admin",
-    "\\Frontend\\src\\services",
     "\\TecVentas",
-    "\\TecVentas\\TecVentas",
-    "\\TecVentas\\TecVentas\\Controllers",
-    "\\TecVentas\\TecVentas\\Data",
-    "\\TecVentas\\TecVentas\\DTOs"
+    "\\TecVentas\\TecVentas"
   ],
-  "SelectedNode": "\\TecVentas\\TecVentas\\Controllers\\HistorialComprasController.cs",
+  "SelectedNode": "\\TecVentas\\TecVentas\\appsettings.json",
   "PreviewInSolutionExplorer": false
 }
