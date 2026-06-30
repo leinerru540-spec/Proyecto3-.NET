@@ -95,7 +95,29 @@ public class PayPalService
         }
 
         var json = await response.Content.ReadAsStringAsync();
+        return JsonDocument.Parse(json);
+    }
 
+    public async Task<JsonDocument> CaptureOrder(string orderId)
+    {
+        var token = await GetAccessToken();
+
+        _httpClient.DefaultRequestHeaders.Clear();
+        _httpClient.DefaultRequestHeaders.Authorization =
+            new AuthenticationHeaderValue("Bearer", token);
+
+        var response = await _httpClient.PostAsync(
+            $"https://api-m.sandbox.paypal.com/v2/checkout/orders/{orderId}/capture",
+            new StringContent("", Encoding.UTF8, "application/json")
+        );
+
+        if (!response.IsSuccessStatusCode)
+        {
+            var error = await response.Content.ReadAsStringAsync();
+            throw new Exception($"Error capturando la orden: {error}");
+        }
+
+        var json = await response.Content.ReadAsStringAsync();
         return JsonDocument.Parse(json);
     }
 }

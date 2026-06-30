@@ -6,6 +6,8 @@ import AdminProductos from "./pages/admin/AdminProductos";
 import AdminUsuarios from "./pages/admin/AdminUsuarios";
 import AdminVentas from "./pages/admin/AdminVentas";
 import Login from "./pages/Login";
+import PagoExitoso from "./pages/PagoExitoso";
+import PagoCancelado from "./pages/PagoCancelado";
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
         <Route path="/admin/usuarios" element={<AdminUsuarios />} />
         <Route path="/admin/ventas" element={<AdminVentas />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/pago-exitoso" element={<PagoExitoso />} />
+        <Route path="/pago-cancelado" element={<PagoCancelado />} />
       </Routes>
     </BrowserRouter>
   );

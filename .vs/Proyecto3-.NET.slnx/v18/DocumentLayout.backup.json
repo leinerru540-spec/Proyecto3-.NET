@@ -3,28 +3,116 @@
   "WorkspaceRootPath": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Models\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\PagoCancelado.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\PagoCancelado.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\TecVentas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\TecVentas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Productos.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\Productos.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\PagoExitoso.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\PagoExitoso.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\productosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\services\\productosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\PagosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Controllers\\PagosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\PayPalController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Controllers\\PayPalController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\ventasService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\services\\ventasService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\paypalService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\services\\paypalService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\api\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\api\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\components\\ProductoCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\ProductoCard.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\PayPalService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\services\\PayPalService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\VentasController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Controllers\\VentasController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\usuariosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\services\\usuariosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\Login.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\components\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\components\\Navbar.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Models\\Venta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminVentas.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\admin\\AdminVentas.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Models\\Pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Productos.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\Productos.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminProductos.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\admin\\AdminProductos.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\ProductosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Controllers\\ProductosController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\CloudinaryService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\services\\CloudinaryService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Data\\DbInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Data\\DbInitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Data\\DesignTimeDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Data\\DesignTimeDbContextFactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\productosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\services\\productosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\ProductoDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Models\\ProductoDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Models\\Producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\TecVentas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\TecVentas.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -35,28 +123,12 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\App.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\services\\TokenService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminUsuarios.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\pages\\admin\\AdminUsuarios.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\api\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\api\\api.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\usuariosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Frontend\\src\\services\\usuariosService.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\package.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -69,10 +141,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\src\\pages\\Inicio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:src\\pages\\Inicio.jsx||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TecVentas\\TecVentas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,61 +150,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Navbar.jsx",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\components\\Navbar.jsx",
-              "RelativeDocumentMoniker": "Frontend\\src\\components\\Navbar.jsx",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\components\\Navbar.jsx",
-              "RelativeToolTip": "Frontend\\src\\components\\Navbar.jsx",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAIwGEAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-06-30T05:02:29.502Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Producto.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Producto.cs",
-              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Models\\Producto.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Producto.cs",
-              "RelativeToolTip": "TecVentas\\TecVentas\\Models\\Producto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T05:30:24.739Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "productosService.js",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\productosService.js",
-              "RelativeDocumentMoniker": "Frontend\\src\\services\\productosService.js",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\productosService.js",
-              "RelativeToolTip": "Frontend\\src\\services\\productosService.js",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-06-30T05:24:50.703Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Productos.jsx",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Productos.jsx",
-              "RelativeDocumentMoniker": "Frontend\\src\\pages\\Productos.jsx",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Productos.jsx",
-              "RelativeToolTip": "Frontend\\src\\pages\\Productos.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-06-30T05:23:31.487Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -147,111 +162,150 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\index.html",
-              "RelativeDocumentMoniker": "Frontend\\index.html",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\index.html",
-              "RelativeToolTip": "Frontend\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-06-30T05:02:13.356Z",
+              "DocumentIndex": 0,
+              "Title": "PagoCancelado.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\PagoCancelado.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\pages\\PagoCancelado.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\PagoCancelado.jsx",
+              "RelativeToolTip": "Frontend\\src\\pages\\PagoCancelado.jsx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T15:11:40.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PagosController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\PagosController.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Controllers\\PagosController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\PagosController.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Controllers\\PagosController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T14:59:33.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "index.css",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\index.css",
-              "RelativeDocumentMoniker": "Frontend\\src\\index.css",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\index.css",
-              "RelativeToolTip": "Frontend\\src\\index.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-06-30T05:02:05.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TecVentas.http",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\TecVentas.http",
-              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\TecVentas.http",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\TecVentas.http",
-              "RelativeToolTip": "TecVentas\\TecVentas\\TecVentas.http",
-              "ViewState": "AgIAADcAAAAAAAAAAAAkwD8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-06-30T04:38:02.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "App.jsx",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\App.jsx",
-              "RelativeDocumentMoniker": "Frontend\\src\\App.jsx",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\App.jsx",
-              "RelativeToolTip": "Frontend\\src\\App.jsx",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-06-30T05:01:48.93Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "TokenService.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\TokenService.cs",
-              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\services\\TokenService.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\TokenService.cs",
-              "RelativeToolTip": "TecVentas\\TecVentas\\services\\TokenService.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAADwvyYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T04:56:58.252Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Login.jsx",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Login.jsx",
-              "RelativeDocumentMoniker": "Frontend\\src\\pages\\Login.jsx",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Login.jsx",
-              "RelativeToolTip": "Frontend\\src\\pages\\Login.jsx",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAQwIMAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-06-30T04:42:42.427Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Program.cs",
-              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Program.cs",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Program.cs",
-              "RelativeToolTip": "TecVentas\\TecVentas\\Program.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAUwFIAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T04:54:14.256Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
               "Title": "api.js",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\api\\api.js",
               "RelativeDocumentMoniker": "Frontend\\src\\api\\api.js",
               "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\api\\api.js",
               "RelativeToolTip": "Frontend\\src\\api\\api.js",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAowBMAAAATAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2026-06-30T04:41:58.232Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 6,
+              "Title": "paypalService.js",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\paypalService.js",
+              "RelativeDocumentMoniker": "Frontend\\src\\services\\paypalService.js",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\paypalService.js",
+              "RelativeToolTip": "Frontend\\src\\services\\paypalService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-30T07:36:01.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ventasService.js",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\ventasService.js",
+              "RelativeDocumentMoniker": "Frontend\\src\\services\\ventasService.js",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\ventasService.js",
+              "RelativeToolTip": "Frontend\\src\\services\\ventasService.js",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-30T06:59:21.472Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\App.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\App.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\App.jsx",
+              "RelativeToolTip": "Frontend\\src\\App.jsx",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T05:01:48.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductoCard.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\components\\ProductoCard.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\components\\ProductoCard.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\components\\ProductoCard.jsx",
+              "RelativeToolTip": "Frontend\\src\\components\\ProductoCard.jsx",
+              "ViewState": "AgIAAHEAAAAAAAAAAAAAABsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T06:25:27.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagoExitoso.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\PagoExitoso.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\pages\\PagoExitoso.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\PagoExitoso.jsx",
+              "RelativeToolTip": "Frontend\\src\\pages\\PagoExitoso.jsx",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T06:40:44.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PayPalService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\PayPalService.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\services\\PayPalService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\PayPalService.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\services\\PayPalService.cs",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T07:23:28.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PayPalController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\PayPalController.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Controllers\\PayPalController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\PayPalController.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Controllers\\PayPalController.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAAAAABQAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:32:36.467Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "VentasController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\VentasController.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Controllers\\VentasController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\VentasController.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Controllers\\VentasController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:44:37.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "usuariosService.js",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\usuariosService.js",
               "RelativeDocumentMoniker": "Frontend\\src\\services\\usuariosService.js",
@@ -264,7 +318,237 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
+              "Title": "Login.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Login.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\pages\\Login.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Login.jsx",
+              "RelativeToolTip": "Frontend\\src\\pages\\Login.jsx",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBwAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T04:42:42.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Venta.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Venta.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Models\\Venta.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Venta.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Models\\Venta.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAADwvxQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:44:18.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "AdminVentas.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminVentas.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\pages\\admin\\AdminVentas.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminVentas.jsx",
+              "RelativeToolTip": "Frontend\\src\\pages\\admin\\AdminVentas.jsx",
+              "ViewState": "AgIAABABAAAAAAAAAADwvyABAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T07:13:03.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Pago.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Models\\Pago.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Pago.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Models\\Pago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:55:57.497Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Program.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Program.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Program.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAE4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T04:54:14.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminProductos.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminProductos.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\pages\\admin\\AdminProductos.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminProductos.jsx",
+              "RelativeToolTip": "Frontend\\src\\pages\\admin\\AdminProductos.jsx",
+              "ViewState": "AgIAAOsAAAAAAAAAAAAAwBkBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T05:49:35.237Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\appsettings.json",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\appsettings.json",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\appsettings.json",
+              "RelativeToolTip": "TecVentas\\TecVentas\\appsettings.json",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAABIAAABfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-06-28T19:50:56.625Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductosController.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\ProductosController.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Controllers\\ProductosController.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Controllers\\ProductosController.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Controllers\\ProductosController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T05:37:55.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Productos.jsx",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Productos.jsx",
+              "RelativeDocumentMoniker": "Frontend\\src\\pages\\Productos.jsx",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\Productos.jsx",
+              "RelativeToolTip": "Frontend\\src\\pages\\Productos.jsx",
+              "ViewState": "AgIAAEIAAAAAAAAAAADwv1IAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
+              "WhenOpened": "2026-06-30T05:23:31.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CloudinaryService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\CloudinaryService.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\services\\CloudinaryService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\CloudinaryService.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\services\\CloudinaryService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAgwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T06:08:20.988Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DbInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Data\\DbInitializer.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Data\\DbInitializer.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Data\\DbInitializer.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Data\\DbInitializer.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAcwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T05:51:25.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "DesignTimeDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Data\\DesignTimeDbContextFactory.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Data\\DesignTimeDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Data\\DesignTimeDbContextFactory.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Data\\DesignTimeDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T05:54:48.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "productosService.js",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\productosService.js",
+              "RelativeDocumentMoniker": "Frontend\\src\\services\\productosService.js",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\services\\productosService.js",
+              "RelativeToolTip": "Frontend\\src\\services\\productosService.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2026-06-30T05:24:50.703Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\ProductoDTO.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Models\\ProductoDTO.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\ProductoDTO.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Models\\ProductoDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T05:37:33.347Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Producto.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\Models\\Producto.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\Models\\Producto.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\Models\\Producto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T05:30:24.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\index.html",
+              "RelativeDocumentMoniker": "Frontend\\index.html",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\index.html",
+              "RelativeToolTip": "Frontend\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-06-30T05:02:13.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "index.css",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\index.css",
+              "RelativeDocumentMoniker": "Frontend\\src\\index.css",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\index.css",
+              "RelativeToolTip": "Frontend\\src\\index.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-06-30T05:02:05.338Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "TecVentas.http",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\TecVentas.http",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\TecVentas.http",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\TecVentas.http",
+              "RelativeToolTip": "TecVentas\\TecVentas\\TecVentas.http",
+              "ViewState": "AgIAADcAAAAAAAAAAAAkwD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2026-06-30T04:38:02.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TokenService.cs",
+              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\TokenService.cs",
+              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\services\\TokenService.cs",
+              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\services\\TokenService.cs",
+              "RelativeToolTip": "TecVentas\\TecVentas\\services\\TokenService.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAADwvyYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T04:56:58.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
               "Title": "AdminUsuarios.jsx",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\src\\pages\\admin\\AdminUsuarios.jsx",
               "RelativeDocumentMoniker": "Frontend\\src\\pages\\admin\\AdminUsuarios.jsx",
@@ -272,12 +556,11 @@
               "RelativeToolTip": "Frontend\\src\\pages\\admin\\AdminUsuarios.jsx",
               "ViewState": "AgIAACgBAAAAAAAAAAAUwDkBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
-              "WhenOpened": "2026-06-30T04:40:47.344Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T04:40:47.344Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 32,
               "Title": "package.json",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\Frontend\\package.json",
               "RelativeDocumentMoniker": "Frontend\\package.json",
@@ -285,12 +568,11 @@
               "RelativeToolTip": "Frontend\\package.json",
               "ViewState": "AgIAAAYAAAAAAAAAAAAQwAcAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-30T04:26:35.972Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-06-30T04:26:35.972Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 33,
               "Title": "Login.jsx",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\src\\pages\\Login.jsx",
               "RelativeDocumentMoniker": "src\\pages\\Login.jsx",
@@ -301,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 34,
               "Title": "Inicio.jsx",
               "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\src\\pages\\Inicio.jsx",
               "RelativeDocumentMoniker": "src\\pages\\Inicio.jsx",
@@ -309,19 +591,6 @@
               "RelativeToolTip": "src\\pages\\Inicio.jsx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003663|",
               "WhenOpened": "2026-06-30T04:20:48.523Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\appsettings.json",
-              "RelativeDocumentMoniker": "TecVentas\\TecVentas\\appsettings.json",
-              "ToolTip": "C:\\Users\\Dell\\Desktop\\.Net\\Proyecto3-.NET\\TecVentas\\TecVentas\\appsettings.json",
-              "RelativeToolTip": "TecVentas\\TecVentas\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-28T19:50:56.625Z",
-              "EditorCaption": ""
             }
           ]
         }

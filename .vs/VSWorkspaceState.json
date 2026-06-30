@@ -4,13 +4,13 @@
     "\\Frontend",
     "\\Frontend\\src",
     "\\Frontend\\src\\components",
-    "\\Frontend\\src\\services",
+    "\\Frontend\\src\\pages",
     "\\TecVentas",
     "\\TecVentas\\TecVentas",
     "\\TecVentas\\TecVentas\\Controllers",
     "\\TecVentas\\TecVentas\\Models",
     "\\TecVentas\\TecVentas\\services"
   ],
-  "SelectedNode": "\\TecVentas\\TecVentas\\services",
+  "SelectedNode": "\\Frontend\\src\\App.jsx",
   "PreviewInSolutionExplorer": false
 }

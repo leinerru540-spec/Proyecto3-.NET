@@ -26,17 +26,20 @@ function Login() {
         try {
             const respuesta = await loginUsuario(datos);
 
-            // 🔥 TOKEN
+            
             localStorage.setItem("token", respuesta.data.token);
 
-            // 🔥 USER COMPLETO
+            
             localStorage.setItem("user", JSON.stringify(respuesta.data.user));
 
-            // 🔥 ROLE (ESTO ES LO QUE TE FALTABA)
+            
             localStorage.setItem(
                 "role",
                 (respuesta.data.user.role || "").toLowerCase()
             );
+
+           
+            localStorage.setItem("userId", respuesta.data.user.id);
 
             navigate("/");
         } catch (error) {
@@ -96,7 +99,8 @@ function Login() {
                                 type="password"
                                 name="password"
                                 value={datos.password}
-                                onChange={manejarCambio}
+                                onChange={manejarCambio
+                                }
                                 placeholder="Ingresa tu contraseña"
                                 className="w-full mt-2 mb-6 px-4 py-3 rounded-xl border border-purple-200 outline-none focus:ring-2 focus:ring-[#A855F7]"
                                 required
