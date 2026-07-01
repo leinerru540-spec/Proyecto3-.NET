@@ -14,7 +14,7 @@ function AdminProductos() {
     const [productos, setProductos] = useState([]);
     const [mensaje, setMensaje] = useState("");
 
-    // 🔥 PRODUCTO
+    
     const [producto, setProducto] = useState({
         id: 0,
         nombre: "",
@@ -22,7 +22,7 @@ function AdminProductos() {
         stock: "",
     });
 
-    // 🔥 IMAGEN
+    
     const [imagen, setImagen] = useState(null);
 
     useEffect(() => {
@@ -49,7 +49,7 @@ function AdminProductos() {
         setImagen(e.target.files[0]);
     }
 
-    // 🚀 GUARDAR / ACTUALIZAR
+    
     async function guardarProducto(e) {
         e.preventDefault();
 
@@ -60,7 +60,7 @@ function AdminProductos() {
             formData.append("precio", Number(producto.precio));
             formData.append("stock", Number(producto.stock));
 
-            // ✔ solo si el usuario selecciona imagen
+            
             if (imagen) {
                 formData.append("imagen", imagen);
             }
@@ -75,7 +75,7 @@ function AdminProductos() {
             cargarProductos();
 
         } catch (error) {
-            console.error(error);
+            console.error("Error producto:", error.response?.data);
             setMensaje("No se pudo guardar el producto.");
         }
     }
@@ -138,7 +138,7 @@ function AdminProductos() {
                             </div>
                         )}
 
-                        {/* FORM */}
+                        
                         <h2 ref={formularioRef} className="text-xl font-bold text-[#7E22CE] mb-5">
                             Crear / Editar Producto
                         </h2>
@@ -198,7 +198,7 @@ function AdminProductos() {
                             </button>
                         )}
 
-                        {/* TABLA */}
+                        
                         <h2 className="text-xl font-bold text-[#7E22CE] mb-5">
                             Productos Registrados
                         </h2>
@@ -235,7 +235,7 @@ function AdminProductos() {
 
                                                 <td>{p.stock}</td>
 
-                                                {/* IMAGEN CLOUDINARY */}
+                                                
                                                 <td>
                                                     {p.imagen && (
                                                         <img

@@ -1,13 +1,16 @@
 import { useState } from "react";
 import { crearOrdenPayPal } from "../services/paypalService";
 import { useCarrito } from "../context/CarritoContext";
+import { useNavigate } from "react-router-dom";
 
 function ProductoCard({ producto }) {
     const [cantidad, setCantidad] = useState(1);
     const [loading, setLoading] = useState(false);
     const { agregarProducto } = useCarrito();
+    const navigate = useNavigate();
 
     const sinStock = producto.stock <= 0;
+    const logueado = !!localStorage.getItem("token");
 
     const aumentar = () => {
         if (cantidad < producto.stock) {
@@ -23,12 +26,20 @@ function ProductoCard({ producto }) {
 
     function manejarAgregarCarrito() {
         if (sinStock) return;
+        if (!logueado) {
+            navigate("/login");
+            return;
+        }
         agregarProducto(producto, cantidad);
         alert(`${producto.nombre} agregado al carrito`);
     }
 
     async function manejarCompra() {
         if (sinStock) return;
+        if (!logueado) {
+            navigate("/login");
+            return;
+        }
 
         try {
             setLoading(true);
@@ -119,7 +130,7 @@ function ProductoCard({ producto }) {
                         disabled={sinStock}
                         className="w-full bg-white border-2 border-[#A855F7] text-[#A855F7] hover:bg-[#A855F7] hover:text-white py-3 rounded-2xl font-bold text-lg transition disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#A855F7]"
                     >
-                        {sinStock ? "Sin stock" : "Agregar al carrito"}
+                        {sinStock ? "Sin stock" : !logueado ? "Inicia sesión para comprar" : "Agregar al carrito"}
                     </button>
 
                     <button
@@ -127,7 +138,7 @@ function ProductoCard({ producto }) {
                         disabled={loading || sinStock}
                         className="w-full bg-[#A855F7] hover:bg-[#9333EA] text-white py-3 rounded-2xl font-bold text-lg transition shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                        {sinStock ? "Sin stock" : loading ? "Redirigiendo..." : "Comprar ahora"}
+                        {sinStock ? "Sin stock" : !logueado ? "Inicia sesión para comprar" : loading ? "Redirigiendo..." : "Comprar ahora"}
                     </button>
                 </div>
 

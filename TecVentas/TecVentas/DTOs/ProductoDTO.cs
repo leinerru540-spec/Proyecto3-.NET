@@ -9,6 +9,6 @@ namespace TecVentas.Models
         public int Stock { get; set; }
 
         
-        public IFormFile Imagen { get; set; }
+        public IFormFile? Imagen { get; set; }
     }
 }

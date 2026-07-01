@@ -3,14 +3,14 @@
     "",
     "\\Frontend",
     "\\Frontend\\src",
-    "\\Frontend\\src\\context",
+    "\\Frontend\\src\\components",
     "\\Frontend\\src\\pages",
-    "\\Frontend\\src\\services",
+    "\\Frontend\\src\\pages\\admin",
     "\\TecVentas",
     "\\TecVentas\\TecVentas",
-    "\\TecVentas\\TecVentas\\Controllers",
+    "\\TecVentas\\TecVentas\\DTOs",
     "\\TecVentas\\TecVentas\\Models"
   ],
-  "SelectedNode": "\\Frontend\\src\\services\\authService.js",
+  "SelectedNode": "\\Frontend\\src\\pages\\Nosotros.jsx",
   "PreviewInSolutionExplorer": false
 }
