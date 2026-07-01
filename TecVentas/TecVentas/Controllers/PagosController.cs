@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TecVentas.Data;
 using TecVentas.Models;
@@ -16,14 +17,14 @@ namespace TecVentas.Controllers
             _context = context;
         }
 
-        // GET: api/Pagos
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Pago>>> GetPagos()
         {
             return await _context.Pagos.ToListAsync();
         }
 
-        // GET: api/Pagos/5
+        [Authorize(Roles = "Admin")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Pago>> GetPago(int id)
         {
@@ -35,7 +36,7 @@ namespace TecVentas.Controllers
             return pago;
         }
 
-        // POST: api/Pagos
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Pago>> PostPago(Pago pago)
         {
@@ -45,7 +46,7 @@ namespace TecVentas.Controllers
             return CreatedAtAction(nameof(GetPago), new { id = pago.PagoId }, pago);
         }
 
-        // PUT: api/Pagos/5
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutPago(int id, Pago pago)
         {
@@ -69,7 +70,7 @@ namespace TecVentas.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Pagos/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePago(int id)
         {
@@ -84,4 +85,3 @@ namespace TecVentas.Controllers
         }
     }
 }
-

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TecVentas.Data;
 using TecVentas.Models;
@@ -22,7 +23,7 @@ namespace TecVentas.Controllers
             _context = context;
         }
 
-        // GET: api/Ventas
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Venta>>> GetVentas()
         {
@@ -32,7 +33,7 @@ namespace TecVentas.Controllers
                 .ToListAsync();
         }
 
-        // GET: api/Ventas/5
+        [Authorize(Roles = "Admin")]
         [HttpGet("{id}")]
         public async Task<ActionResult<Venta>> GetVenta(int id)
         {
@@ -47,7 +48,7 @@ namespace TecVentas.Controllers
             return venta;
         }
 
-        // POST: api/Ventas/validar-stock
+        [Authorize]
         [HttpPost("validar-stock")]
         public async Task<IActionResult> ValidarStock([FromBody] List<ItemValidacion> items)
         {
@@ -78,7 +79,7 @@ namespace TecVentas.Controllers
             return Ok(new { mensaje = "Stock disponible" });
         }
 
-        // POST: api/Ventas
+        [Authorize]
         [HttpPost]
         public async Task<ActionResult<Venta>> PostVenta([FromBody] Venta venta)
         {
@@ -90,11 +91,9 @@ namespace TecVentas.Controllers
             if (producto == null)
                 return BadRequest("Producto no encontrado");
 
-            
             if (producto.Stock < venta.Cantidad)
                 return BadRequest("Stock insuficiente");
 
-            
             producto.Stock -= venta.Cantidad;
             _context.Productos.Update(producto);
 
@@ -109,7 +108,7 @@ namespace TecVentas.Controllers
             return CreatedAtAction(nameof(GetVenta), new { id = venta.Id }, venta);
         }
 
-        // PUT: api/Ventas/5
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutVenta(int id, Venta venta)
         {
@@ -133,7 +132,7 @@ namespace TecVentas.Controllers
             return NoContent();
         }
 
-        // DELETE: api/Ventas/5
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteVenta(int id)
         {

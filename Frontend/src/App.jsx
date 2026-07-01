@@ -19,6 +19,14 @@ function RutaPrivada({ children }) {
     return token ? children : <Navigate to="/login" replace />;
 }
 
+function RutaAdmin({ children }) {
+    const token = localStorage.getItem("token");
+    const role = localStorage.getItem("role");
+    if (!token) return <Navigate to="/login" replace />;
+    if (role !== "admin") return <Navigate to="/" replace />;
+    return children;
+}
+
 function App() {
     return (
         <CarritoProvider>
@@ -27,32 +35,44 @@ function App() {
                     <Route path="/" element={<Inicio />} />
                     <Route path="/nosotros" element={<Nosotros />} />
                     <Route path="/productos" element={<Productos />} />
-                    <Route path="/carrito" element={<Carrito />} />
-                    <Route path="/admin/productos" element={<AdminProductos />} />
-                    <Route path="/admin/usuarios" element={<AdminUsuarios />} />
-                    <Route path="/admin/ventas" element={<AdminVentas />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/registro" element={<Registro />} />
                     <Route path="/pago-exitoso" element={<PagoExitoso />} />
                     <Route path="/pago-cancelado" element={<PagoCancelado />} />
 
-                    <Route
-                        path="/perfil/compras"
-                        element={
-                            <RutaPrivada>
-                                <HistorialCompras />
-                            </RutaPrivada>
-                        }
-                    />
+                    <Route path="/carrito" element={
+                        <RutaPrivada>
+                            <Carrito />
+                        </RutaPrivada>
+                    } />
 
-                    <Route
-                        path="/perfil"
-                        element={
-                            <RutaPrivada>
-                                <MiCuenta />
-                            </RutaPrivada>
-                        }
-                    />
+                    <Route path="/admin/productos" element={
+                        <RutaAdmin>
+                            <AdminProductos />
+                        </RutaAdmin>
+                    } />
+                    <Route path="/admin/usuarios" element={
+                        <RutaAdmin>
+                            <AdminUsuarios />
+                        </RutaAdmin>
+                    } />
+                    <Route path="/admin/ventas" element={
+                        <RutaAdmin>
+                            <AdminVentas />
+                        </RutaAdmin>
+                    } />
+
+                    <Route path="/perfil/compras" element={
+                        <RutaPrivada>
+                            <HistorialCompras />
+                        </RutaPrivada>
+                    } />
+
+                    <Route path="/perfil" element={
+                        <RutaPrivada>
+                            <MiCuenta />
+                        </RutaPrivada>
+                    } />
                 </Routes>
             </BrowserRouter>
         </CarritoProvider>

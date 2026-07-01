@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using TecVentas.Data;
 using TecVentas.Models;
@@ -19,14 +20,12 @@ namespace TecVentas.Controllers
             _cloudinary = cloudinary;
         }
 
-        
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Producto>>> GetProductos()
         {
             return await _context.Productos.ToListAsync();
         }
 
-        
         [HttpGet("{id}")]
         public async Task<ActionResult<Producto>> GetProducto(int id)
         {
@@ -38,7 +37,7 @@ namespace TecVentas.Controllers
             return producto;
         }
 
-        
+        [Authorize(Roles = "Admin")]
         [HttpPost]
         public async Task<ActionResult<Producto>> PostProducto([FromForm] ProductoDTO dto)
         {
@@ -63,7 +62,7 @@ namespace TecVentas.Controllers
             return CreatedAtAction(nameof(GetProducto), new { id = producto.Id }, producto);
         }
 
-       
+        [Authorize(Roles = "Admin")]
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProducto(int id, [FromForm] ProductoDTO dto)
         {
@@ -86,7 +85,7 @@ namespace TecVentas.Controllers
             return Ok(producto);
         }
 
-        
+        [Authorize(Roles = "Admin")]
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteProducto(int id)
         {
