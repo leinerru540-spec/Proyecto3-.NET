@@ -98,50 +98,65 @@ function ProductoCard({ producto }) {
                     </span>
                 </p>
 
-                {!sinStock && (
-                    <div className="flex items-center justify-between mb-6">
-                        <p className="font-semibold">Cantidad</p>
+                {!sinStock && logueado && (
+    <div className="flex items-center justify-between mb-6">
+        <p className="font-semibold">Cantidad</p>
 
-                        <div className="flex items-center gap-3">
-                            <button
-                                onClick={disminuir}
-                                className="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#A855F7] hover:text-white font-bold transition"
-                            >
-                                -
-                            </button>
+        <div className="flex items-center gap-3">
+            <button
+                onClick={disminuir}
+                className="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#A855F7] hover:text-white font-bold transition"
+            >
+                -
+            </button>
 
-                            <span className="text-xl font-bold w-8 text-center">
-                                {cantidad}
-                            </span>
+            <span className="text-xl font-bold w-8 text-center">
+                {cantidad}
+            </span>
 
-                            <button
-                                onClick={aumentar}
-                                className="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#A855F7] hover:text-white font-bold transition"
-                            >
-                                +
-                            </button>
-                        </div>
-                    </div>
-                )}
+            <button
+                onClick={aumentar}
+                className="w-9 h-9 rounded-full bg-gray-200 hover:bg-[#A855F7] hover:text-white font-bold transition"
+            >
+                +
+            </button>
+        </div>
+    </div>
+)}
 
                 <div className="flex flex-col gap-3">
-                    <button
-                        onClick={manejarAgregarCarrito}
-                        disabled={sinStock}
-                        className="w-full bg-white border-2 border-[#A855F7] text-[#A855F7] hover:bg-[#A855F7] hover:text-white py-3 rounded-2xl font-bold text-lg transition disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:bg-white disabled:hover:text-[#A855F7]"
-                    >
-                        {sinStock ? "Sin stock" : !logueado ? "Inicia sesión para comprar" : "Agregar al carrito"}
-                    </button>
 
-                    <button
-                        onClick={manejarCompra}
-                        disabled={loading || sinStock}
-                        className="w-full bg-[#A855F7] hover:bg-[#9333EA] text-white py-3 rounded-2xl font-bold text-lg transition shadow-lg disabled:opacity-60 disabled:cursor-not-allowed"
-                    >
-                        {sinStock ? "Sin stock" : !logueado ? "Inicia sesión para comprar" : loading ? "Redirigiendo..." : "Comprar ahora"}
-                    </button>
-                </div>
+    {!logueado ? (
 
+        <button
+            onClick={() => navigate("/login")}
+            className="w-full border-2 border-[#A855F7] text-[#A855F7] hover:bg-[#A855F7] hover:text-white py-3 rounded-2xl font-bold text-lg transition"
+        >
+            Iniciar sesión para comprar
+        </button>
+
+    ) : (
+
+        <>
+            <button
+                onClick={manejarAgregarCarrito}
+                disabled={sinStock}
+                className="w-full bg-white border-2 border-[#A855F7] text-[#A855F7] hover:bg-[#A855F7] hover:text-white py-3 rounded-2xl font-bold text-lg transition"
+            >
+                Agregar al carrito
+            </button>
+
+            <button
+                onClick={() => navigate("/carrito")}
+                className="w-full bg-[#A855F7] hover:bg-[#9333EA] text-white py-3 rounded-2xl font-bold text-lg transition shadow-lg"
+            >
+                Ver carrito
+            </button>
+        </>
+
+    )}
+
+</div>
             </div>
         </div>
     );
