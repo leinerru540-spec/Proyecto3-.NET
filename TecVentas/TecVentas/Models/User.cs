@@ -14,6 +14,6 @@
 
         public string? Telefono { get; set; }
 
-        public required string Role { get; set; }
+        public string Role { get; set; } = "User";
     }
 }

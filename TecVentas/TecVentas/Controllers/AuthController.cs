@@ -178,6 +178,24 @@ namespace TecVentas.Controllers
             });
         }
 
+        [AllowAnonymous]
+        [HttpPost("register")]
+        public async Task<IActionResult> Register([FromBody] User user)
+        {
+            var existe = await _context.Users.AnyAsync(u => u.Username == user.Username);
+            if (existe)
+                return BadRequest("El usuario ya existe");
+
+            var hasher = new PasswordHasher<User>();
+            user.Password = hasher.HashPassword(user, user.Password);
+            user.Role = "User";
+
+            _context.Users.Add(user);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { mensaje = "Usuario registrado correctamente" });
+        }
+
         // Eliminar usuario
         [Authorize(Roles = "Admin")]
         [HttpDelete("users/{id}")]

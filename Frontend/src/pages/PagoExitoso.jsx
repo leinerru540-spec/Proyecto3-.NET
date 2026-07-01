@@ -33,23 +33,31 @@ function PagoExitoso() {
             }
 
             try {
-                const carrito = JSON.parse(
-                    localStorage.getItem("carritoCompra") || "[]"
-                );
+                const userId = Number(localStorage.getItem("userId"));
 
-                if (carrito.length === 0) {
+                
+                const carritoGuardado = JSON.parse(localStorage.getItem("carritoCompra") || "[]");
+                const productoId = localStorage.getItem("productoId");
+                const cantidad = localStorage.getItem("cantidad");
+
+                let items = [];
+
+                if (carritoGuardado.length > 0) {
+                    
+                    items = carritoGuardado.map((item) => ({
+                        productoId: item.id,
+                        cantidad: item.cantidad,
+                    }));
+                } else if (productoId && cantidad) {
+                    
+                    items = [{ productoId: Number(productoId), cantidad: Number(cantidad) }];
+                } else {
                     setEstado("Pago OK pero no se encontró el carrito");
                     return;
                 }
 
-                const userId = Number(localStorage.getItem("userId"));
-
-                for (const item of carrito) {
-                    const venta = {
-                        userId,
-                        productoId: item.id,
-                        cantidad: item.cantidad
-                    };
+                for (const item of items) {
+                    const venta = { userId, productoId: item.productoId, cantidad: item.cantidad };
                     console.log("Venta:", venta);
 
                     const ventaRes = await api.post("/Ventas", venta);
@@ -66,7 +74,10 @@ function PagoExitoso() {
                     console.log("Pago registrado para venta", ventaRes.data.id);
                 }
 
+                
                 localStorage.removeItem("carritoCompra");
+                localStorage.removeItem("productoId");
+                localStorage.removeItem("cantidad");
                 vaciarCarrito();
 
                 setEstado("¡Pago exitoso y venta guardada!");
